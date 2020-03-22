@@ -105,7 +105,7 @@ function errorResponse(input){
     setHistoryButtons();
     //Displaying error message on main jumbotron
     $("#main-jumbo").html(`
-    <h1 class="display-8">The city you searched did not give a result. Correct your search and try again.</h1>
+    <h1 class="display-8">Enter a Valid City!</h1>
     `);
     $("#forecast-title").html(``);
     //Emptying forecast cards
