@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- NavBar -->
+    <nav class="navbar navbar-dark bg-dark" class="title">
+        <h2 id="title">Weather Dashboard</h2>
+    </nav>
+    <main>
+        <!-- Search and History -->
+        <div class="jumbotron bg-light p-4 float-left" id="search-section">
+            <p>Search for a City:</p>
+            <form class="input-group mb-3">
+                <input type="text" class="form-control input-text" placeholder="City Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary fas fa-search" id="search-button" type="button" id="button-addon2"></button>
+                </div>
+            </form>
+            <!-- History Buttons -->
+            <div class="history-container"></div>
+        </div>
+        <!-- Weather Info -->
+        <div class="container float-left m-5" id="main-container">
+            <div class="row">
+                <!-- Today's Forecast -->
+                <div class="jumbotron" id="main-jumbo">
+                    <h1 class="display-8">Search for a city to see the weather and the forecast</h1>
+                </div>
+            </div>
+            <!-- Forecast Title Row -->
+            <div class="row" id="forecast-title"></div>
+            <!-- Five Days Forecast -->
+            <div class="row justify-content-between" id="forecast">
+                <div class="col-md-2 col-5"></div>
+                <div class="col-md-2 col-5"></div>
+                <div class="col-md-2 col-5"></div>
+                <div class="col-md-2 col-5"></div>
+                <div class="col-md-2 col-5"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
