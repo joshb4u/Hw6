@@ -1,0 +1,57 @@
+#title{
+    float: none;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+#main-container{
+    width: 70%;
+}
+#search-section{
+    width: 20%;
+}
+.history-container{
+    justify-content: center;
+}
+.history-button{
+    display: block;
+    justify-content: center;
+    margin: 3px;
+    width: 100%;
+}
+[class^="col-"]{
+    border-radius: 4px;
+    background-color: #007bff;
+    margin: 5px;
+}
+#main-jumbo{
+    padding: 2%;
+    width: 100%;
+}
+.forecast-card{
+    font-size: 13px;
+    color: white;
+}
+@media only screen and (max-width: 1260px) {
+    #main-container{
+        width: 90%;
+    }
+    #search-section{
+        width: 90%;
+    }
+}
+.favorable{
+    background-color: rgba(6, 185, 6, 0.616);
+    padding: 2px;
+    border-radius: 2px;
+}
+.moderate{
+    background-color: yellow;
+    padding: 2px;
+    border-radius: 2px;
+}
+.severe{
+    background-color: red;
+    padding: 2px;
+    border-radius: 2px;
+}
