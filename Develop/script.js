@@ -36,7 +36,7 @@ function setHistoryButtons(){
     let temp = JSON.parse(localStorage.history);
     $(".history-container").html(``);
     temp.forEach(element => {
-        $(".history-container").append(`<button type="button" class="btn btn-primary history-button" data-city="${element}">${element}</button>`);
+        $(".history-container").append(`<button type="button" class="btn btn-outline-primary history-button" data-city="${element}">${element}</button>`);
     })
 }
 //Using Jquery - AJAX Method
